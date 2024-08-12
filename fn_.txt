@@ -1,0 +1,19 @@
+fn get_mult_result(inp1: f64, inp2: f64) -> f64 {
+    return inp1 * inp2;
+}
+
+fn get_divide_result(inp1: f64, inp2: f64) -> f64 {
+    let result: f64;
+    if inp2 != 0.0 {
+        result = inp1 / inp2;
+    } else {
+        result = 0.0;
+    }
+    return result;
+}
+fn main() {
+    println!("multiplication:");
+    println!("{}", get_mult_result(2.1, 2.3));
+    println!("division:");
+    println!("{}", get_divide_result(3.5, 7 as f64));
+}
