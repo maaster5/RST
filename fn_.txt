@@ -12,8 +12,11 @@ fn get_divide_result(inp1: f64, inp2: f64) -> f64 {
     return result;
 }
 fn main() {
+    let d1=4.2;
+    let d2=7;
+    
     println!("multiplication:");
     println!("{}", get_mult_result(2.1, 2.3));
     println!("division:");
-    println!("{}", get_divide_result(3.5, 7 as f64));
+    println!("{}", get_divide_result(d1, d2 as f64));
 }
